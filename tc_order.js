@@ -14,7 +14,6 @@
    The itemDescription array contains the description of each item
    The itemPrice array contains the price of each item
    The itemQty array contains the quantity ordered of each item
-   
 */
 
 var item = [10582, 23015, 41807, 10041];
