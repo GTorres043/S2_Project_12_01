@@ -16,7 +16,7 @@ var orderTotal = 0;
 //this will make a table and display the contents and description of the products
 var cartHTML = "<table> <tr> <th>Item</th><th>Description</th><th>Price</th><th>Qty</th><th>Total</th> </tr>";
 
-//creat a loop for 
+//create a loop for the item description, price, quantity and total value
 for (var i = 0; i <= 3; i++) {
     cartHTML += "<tr> <td><img src='tc_" + item[i] + ".png' alt='" + item[i] + "'/></td>";
     cartHTML += "<td>" + itemDescription[i] + "</td> <td>$" + itemPrice[i] + "</td> <td>" + itemQty[i] + "</td>";
@@ -25,6 +25,7 @@ for (var i = 0; i <= 3; i++) {
     orderTotal = orderTotal + itemCost;
 }
 
+// will display the order total in the tanle 
 cartHTML += "<tr> <td colSpan='4'>Subtotal</td> <td>$" + orderTotal + "<td> </tr> </table>";
 
 document.getElementById("cart").innerHTML = cartHTML;
